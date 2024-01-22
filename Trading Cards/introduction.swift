@@ -54,15 +54,52 @@ struct introduction: View {
                         .frame(width: 305, height: 305)
                     ZStack{
                         HStack{
+                            Spacer()
                             VStack{
                                 Image("logo")
-                                    .padding(.leading,100)
+                                    .resizable()
+                                    .frame(width:210,height: 140)
+                                    .padding(.leading,150)
                                     .padding(.top,200)
                             }
                         }
                     }
                 }
-               
+                ZStack{
+                    Rectangle()
+                        .ignoresSafeArea()
+                        .padding(.horizontal,27)
+                        .foregroundColor(.white)
+                       
+                    VStack(alignment:.leading){
+                        Text("Career stats")
+                            .bold()
+                        HStack{
+                            VStack(alignment:.leading) {
+                                Text("Home runs")
+                                Text("\(homeRuns)")
+                            }
+                            VStack {
+                                Text("RBI")
+                                    .padding(.horizontal)
+                                Text("\(RBI)")
+                            }
+                            VStack(alignment:.leading) {
+                                Text("Batting average")
+                                Text(battingAverage)
+                            }
+                        }
+                        .padding(.top,5)
+                        Text("Most famous play")
+                            .bold()
+                            .padding(.top,5)
+                        Text(famousPlay)
+                            .offset(y:10)
+                           
+                    }
+                    .padding(.horizontal,40)
+                }
+                .padding(.top,15)
             }
         }
         
