@@ -9,9 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack{
-            
+        NavigationStack{
+                
+                List{
+                    NavigationLink(destination: kellyGruber){
+                        Navigation(navigationPhoto: "photo", playerName: "Kelly Gruber", text: "The first Blue Jays to hit for the cycle.")
+                    }
+                }
+                .navigationTitle("Blue Jays of My Youth")
         }
+        
     }
 }
 
