@@ -31,5 +31,5 @@ struct Navigation: View {
 }
 
 #Preview {
-    Navigation(navigationPhoto: "photo", playerName: "Kelly Gruber", text: "The first Blue Jays to hit for the cycle.")
+    Navigation(navigationPhoto: "photo2", playerName: "LeBron James", text: "The first Blue Jays to hit for the cycle.")
 }
