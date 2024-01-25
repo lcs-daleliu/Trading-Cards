@@ -112,7 +112,8 @@ struct introduction: View {
               
             }
         }
-        
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
         
     }
 }
@@ -128,6 +129,8 @@ let magicJohnson = introduction(playerName: "Magic Johnson", imageName: "photo5"
 
 let timDuncan = introduction(playerName: "Tim Duncan", imageName: "photo6", data1: "19.0", data2: "10.8", data3: "2.2", data4: "55.1", famousPlay: "During Game 1 of the 2008 Western Conference Finals between the San Antonio Spurs and the Los Angeles Lakers, In the closing seconds of the game, with the Spurs trailing by two points, Tim Duncan hit a memorable three-pointer to send the game into overtime. While Duncan wasn't known for his three-point shooting, his clutch shot demonstrated his versatility and ability to rise to the occasion when his team needed him. The Spurs went on to win the game in overtime, and Duncan's unexpected three-pointer remains one of the memorable plays in his illustrious career.")
 #Preview {
-    timDuncan
+    NavigationStack{
+        lebronJames
+    }
 }
 
